@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarker</title>
+  <link rel="icon" href="./images/bookmark.png">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="iner  d-flex flex-column justify-content-center pt-5">
+        <div class="head d-flex align-items-center justify-content-center ">
+          <h1 class="">Bookmarker</h1>
+        </div>
+        <div class="input-box  mt-5 py-4">
+          <div class="titel">
+            <h2 class="d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-bookmark me-2"></i>
+              Bookmark Your Favorite Sites
+              <i class="fa-solid fa-bookmark ms-2"></i>
+            </h2>
+          </div>
+          <div class="inputs mt-5 px-3">
+            <div class="input-name">
+              <label for="inputName"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+              <input id="inputName" type="text" placeholder="Bookmarker Name" class="form-control " oninput="validationBookMarkName()">
+            </div>
+            <div class="input-url mt-3" >
+              <label for="inputUrl"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+              <input id="inputUrl" type="text" placeholder="Website URL" class="form-control " oninput="validationBookMarkUrl()">
+            <span class="invalid-feedback">url  is similar https://exambel.com</span>
+            </div>
+            <div class="button d-flex justify-content-center mt-5">
+              <button id="submit" type="button" class="btn btn-danger px-5" onclick="addBookMark() ">Submit</button>
+            </div>
+          </div>
+        </div>
+
+        <table class="table mt-5 text-center bg-light">
+          <thead>
+            <tr><th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </tr></thead>
+          <tbody id="tableContent">
+  
+
+<!--            
+              <tr>
+                <td>1</td>
+                <td class=" fw-bold">bootstrap</td>              
+                <td>
+                  <button class="btn btn-success" >
+                    <i class="fa-solid fa-eye pe-2"></i>
+                    Visit
+                  </button>
+                </td>
+                <td>
+                  <button class="btn btn-danger pe-2" >
+                    <i class="fa-solid fa-trash-can"></i>
+                    Delete
+                  </button>
+                </td>
+            </tr>
+            -->
+
+
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+
+
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

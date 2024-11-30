@@ -1,0 +1,46 @@
+section{
+  background-color: #f7ecde;
+  min-height: 100vh;
+}
+
+h1{
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+font-weight: 500;
+color: #352e28;
+z-index: 3;
+width: fit-content;
+position: relative;
+
+}
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100% ;
+  height: 25%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: all 0.4s;
+  z-index: -1;
+}
+ h1:hover::before {
+  height: 60%;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  background-image: linear-gradient(to right,#40A55C, #B1AC4A);
+background-clip: text;
+color: transparent;
+}
+.input-box{
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+}
+
+.form-control:focus {
+  border: 1.5px dotted #f78d03;
+  box-shadow: 0 0 0 .25rem rgb(250, 222, 180);
+}
